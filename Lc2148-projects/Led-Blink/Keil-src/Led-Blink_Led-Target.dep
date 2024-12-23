@@ -1,0 +1,4 @@
+Dependencies for Project 'Led-Blink', Target 'Led-Target': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Led-Blink-Src.c)(0x66F10F4A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led-blink-src.o --omf_browse .\led-blink-src.crf --depend .\led-blink-src.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214x.h)(0x532C1500)

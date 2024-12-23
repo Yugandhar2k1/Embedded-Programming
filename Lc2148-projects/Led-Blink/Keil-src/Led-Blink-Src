@@ -1,0 +1,22 @@
+#include <LPC214x.h>  // Header file for LPC2148
+
+void delay(void);
+
+int main(void) {
+    // Set P0.10 as output
+    IO0DIR |= (1 << 10);  // Set P0.10 as output (LED)
+
+    while (1) {
+        // Turn ON the LED (P0.10 = 1)
+        IO0SET = (1 << 10);  
+        delay();
+
+        // Turn OFF the LED (P0.10 = 0)
+        IO0CLR = (1 << 10);
+        delay();
+    }
+}
+
+void delay(void) {
+    for (volatile int i = 0; i < 1000000; i++);  // Simple delay loop
+}
